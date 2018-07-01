@@ -20,6 +20,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:orientation="vertical">
 
             /**Question1**/
@@ -30,6 +33,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="6dp"
                 android:layout_weight="1"
+                android:background="#000000"
                 android:orientation="vertical">
 
                 <TextView
@@ -39,6 +43,7 @@
                     android:paddingLeft="6dp"
                     android:paddingTop="6dp"
                     android:text="QUESTION 1"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
                 <TextView
@@ -47,15 +52,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
                     android:text="Scientific name for mammals is called: "
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/q1"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
+                    android:layout_margin="15dp"
+                    android:background="#ffffff"
+                    android:focusedByDefault="false"
                     android:text="  "
-                    android:textSize="18sp"
-                    android:id="@+id/q1"/>
+                    android:textSize="28sp" />
             </LinearLayout>
 
             /**Question 2**/
@@ -66,6 +74,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="6dp"
                 android:layout_weight="1"
+                android:background="#e8e8e8"
                 android:orientation="vertical">
 
                 <TextView
@@ -89,23 +98,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:text="ARISTOTLE"
-                    android:textSize="18sp"
-                    android:onClick="zooFa"
-                    android:id="@+id/arist"/>
+                    <RadioButton
+                        android:id="@+id/arist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:onClick="zooFa"
+                        android:text="ARISTOTLE"
+                        android:textSize="18sp" />
 
-                <RadioButton
-                    android:id="@+id/darwin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:text="DARWIN"
-                    android:textSize="18sp"
-                    android:onClick="zooFa"/>
+                    <RadioButton
+                        android:id="@+id/darwin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:onClick="zooFa"
+                        android:text="DARWIN"
+                        android:textSize="18sp" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -117,6 +126,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="6dp"
                 android:layout_weight="1"
+                android:background="#000000"
                 android:orientation="vertical">
 
                 <TextView
@@ -126,6 +136,7 @@
                     android:paddingLeft="6dp"
                     android:paddingTop="6dp"
                     android:text="QUESTION 3"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
                 <TextView
@@ -134,47 +145,57 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
                     android:text="The human heart is "
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:text=" PULSATING HEART "
-                    android:textSize="18sp"
-                    android:onClick="zooFa2"
-                    android:id="@+id/ph"/>
+                    <RadioButton
+                        android:id="@+id/ph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:buttonTint="#ffffff"
+                        android:onClick="zooFa2"
+                        android:text=" PULSATING HEART "
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                    >
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:text="AMPULLARY HEART"
-                    android:textSize="18sp"
-                    android:onClick="zooFa2"
-                    android:id="@+id/ah"/>
+                    <RadioButton
+                        android:id="@+id/ah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:buttonTint="#ffffff"
+                        android:onClick="zooFa2"
+                        android:text="AMPULLARY HEART"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:text="NEUROGEIC HEART"
-                    android:textSize="18sp"
-                    android:onClick="zooFa2"
-                    android:id="@+id/nh"/>
+                    <RadioButton
+                        android:id="@+id/nh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:buttonTint="#ffffff"
+                        android:onClick="zooFa2"
+                        android:text="NEUROGEIC HEART"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:text="MYOGENIC HEART"
-                    android:textSize="18sp"
-                    android:onClick="zooFa2"
-                    android:id="@+id/mh"/>
+                    <RadioButton
+                        android:id="@+id/mh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:buttonTint="#ffffff"
+                        android:onClick="zooFa2"
+                        android:text="MYOGENIC HEART"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -186,7 +207,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="6dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="#e8e8e8">
 
                 <TextView
                     android:id="@+id/QH4"
@@ -206,28 +228,28 @@
                     android:textSize="18sp" />
 
                 <CheckBox
+                    android:id="@+id/ko"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:text=" KOALAS "
-                    android:textSize="18sp"
-                    android:id="@+id/ko" />
+                    android:textSize="18sp" />
 
                 <CheckBox
+                    android:id="@+id/op"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:text="OPPOSUMS"
-                    android:textSize="18sp"
-                    android:id="@+id/op" />
+                    android:textSize="18sp" />
 
                 <CheckBox
+                    android:id="@+id/sh"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="0dp"
                     android:text="SHREWS"
-                    android:textSize="18sp"
-                    android:id="@+id/sh" />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -239,7 +261,7 @@
                 android:onClick="submit"
                 android:text="SUBMIT" />
 
-            </LinearLayout>
+        </LinearLayout>
 
     </RelativeLayout>
 
